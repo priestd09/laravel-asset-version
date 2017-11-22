@@ -1,0 +1,43 @@
+{
+    "name": "elfsundae/laravel-asset-version",
+    "type": "library",
+    "description": "Laravel static assets versioning",
+    "keywords": ["laravel", "asset", "version", "versioning", "revision"],
+    "homepage": "https://github.com/ElfSundae/laravel-asset-version",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Elf Sundae",
+            "email": "elf.sundae@gmail.com",
+            "homepage": "https://0x123.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/support": "~5.1,<5.6"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.4",
+        "phpunit/phpunit": "~5.7|~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ElfSundae\\Laravel\\AssetVersion\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ElfSundae\\Laravel\\AssetVersion\\Test\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ElfSundae\\Laravel\\AssetVersion\\AssetVersionServiceProvider"
+            ]
+        }
+    }
+}
