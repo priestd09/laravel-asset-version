@@ -68,7 +68,7 @@ You can get the versioned asset path using the `asset_path()` helper function:
 ```php
 asset_path('css/app.css');  // "/css/app.css?3ede8f2085"
 
-<link href="{{ cdn(asset_path('js/app.js')) }}" rel="stylesheet">
+<link href="{{ asset_path('js/app.js') }}" rel="stylesheet">
 ```
 
 ## License
