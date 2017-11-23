@@ -60,6 +60,8 @@ elixir((mix) => {
 });
 ```
 
+> For Laravel Elixir, you can use [`laravel-elixir-asset-version`](https://github.com/ElfSundae/laravel-elixir-asset-version) NPM package to easily execute update.
+
 ## Usage
 
 You can get the versioned asset path using the `asset_path()` helper function:
