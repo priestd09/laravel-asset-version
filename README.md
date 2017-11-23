@@ -52,12 +52,11 @@ return array (
 
 :warning: **You need to run the `asset-version:update` command every time you changed any asset content.** You may call this command in your assets build script, e.g. [Laravel Elixir](https://laravel.com/docs/5.3/elixir):
 
-```diff
+```js
 elixir((mix) => {
-    mix
-    .sass('app.scss')
-    .webpack('app.js')
-    .exec('php artisan asset-version:update');
+    mix.sass('app.scss')
+       .webpack('app.js')
+       .exec('php artisan asset-version:update');
 });
 ```
 
